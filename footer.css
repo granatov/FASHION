@@ -1,0 +1,48 @@
+.footer_inner {
+  text-align: center;
+}
+.footer__menu-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #171717;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+.footer__menu-item + .footer__menu-item {
+  margin-left: 35px;
+}
+
+.footer__menu-link {
+  transition: all 0.3s;
+}
+
+.footer__menu-link:hover {
+  color: #c9a96e;
+}
+
+.footer_line {
+  height: 1px;
+  background: #e5e5e5;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.footer_copy {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #666666;
+  margin-bottom: 30px;
+}
+
+.footer_social {
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+}
