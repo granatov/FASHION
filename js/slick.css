@@ -105,13 +105,50 @@
   z-index: 1;
   bottom: 80px;
   cursor: pointer;
+  border: none;
+  background-color: transparent;
 }
-.slick-next {
+/* .slick-next {
   right: 20%;
-}
-.slick-prev {
+} */
+.prev {
   left: 20%;
+  transition: all 0.3s;
 }
+.next {
+  right: 20%;
+  transition: all 0.3s;
+}
+.prev:hover,
+.next:hover {
+  color: #c9a96e;
+}
+
+.prev::after {
+  content: "";
+  background-image: url(../template/older_arr.svg);
+  width: 6px;
+  height: 10px;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 3px;
+  left: -9px;
+}
+.next::after {
+  content: "";
+  background-image: url(../template/next_arr.svg);
+  width: 6px;
+  height: 10px;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 3px;
+  right: -9px;
+}
+/* .slick-prev {
+  left: 20%;
+} */
 
 .slick-dots {
   list-style: none;
@@ -134,8 +171,13 @@
   border: none;
   padding: 0;
   cursor: pointer;
+  transition: all 0.3s;
 }
 .slick-active button {
+  color: #c9a96e;
+}
+
+.slick-dots button:hover {
   color: #c9a96e;
 }
 

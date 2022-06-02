@@ -2,20 +2,12 @@ $(function () {
   $(".main_slider").slick({
     arrows: true,
     dots: true,
-    prevArrow: '<img class="slick-prev" src="template/prev_arr.svg" alt="">',
-    nextArrow: '<img class="slick-next" src="template/next_arr.svg" alt="">',
+    prevArrow: '<button type="button" class="prev">OLDER POST</button>',
+    nextArrow: '<button type="button" class="next">NEXT POST</button>',
     swipe: false,
     speed: 1500,
     fade: true,
     infinite: false,
-    responsive: [
-      {
-        breakpoint: 568,
-        settings: {
-          arrows: false,
-        },
-      },
-    ],
   });
 
   $(".contact_slider").slick({
