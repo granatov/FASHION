@@ -31,6 +31,7 @@ $(function () {
         breakpoint: 1000,
         settings: {
           slidesToShow: 3,
+          centerMode: true,
           autoplaySpeed: 2000,
         },
       },
