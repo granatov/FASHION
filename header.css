@@ -26,6 +26,53 @@
   color: #171717;
 }
 
+.menu_brg {
+  display: none;
+  height: 26px;
+  width: 40px;
+  position: relative;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.menu_brg::after,
+.menu_brg::before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: #000;
+  transition: all 0.3s;
+}
+
+.menu_brg span {
+  position: absolute;
+  top: 12px;
+  height: 2px;
+  width: 100%;
+  background-color: #000;
+  transition: all 0.3s;
+}
+
+.menu_brg::after {
+  top: 0;
+}
+.menu_brg::before {
+  bottom: 0;
+}
+
+.menu_brg.active span {
+  transform: scale(0);
+}
+.menu_brg.active::after {
+  transform: rotate(45deg);
+  top: 12px;
+}
+.menu_brg.active::before {
+  transform: rotate(-45deg);
+  bottom: 12px;
+}
+
 .header__menu-list {
   list-style: none;
   display: flex;

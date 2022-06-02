@@ -6,8 +6,23 @@
   box-sizing: inherit;
 }
 
+
+
+@font-face {
+  font-family: "HK Grotesk";
+  src: url("font/hkgrotesk-light-web.woff") format("woff"),
+    url("font/hkgrotesk-light-web.woff2") format("woff2"),
+    url("font/HKGrotesk-Light.otf") format("otf"),
+    url("font/HKGrotesk-Light.ttf") format("ttf");
+
+  font-style: normal;
+  font-weight: normal;
+}
+
 body {
   font-family: "PT Serif", serif;
+  overflow-x: hidden;
+
 }
 
 a {

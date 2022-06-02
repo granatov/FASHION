@@ -6,6 +6,12 @@
   display: flex;
   justify-content: space-between;
 }
+.main_slider {
+  max-width: 770px;
+}
+.main_content_link {
+  display: block;
+}
 
 .main__content {
   display: grid;
@@ -17,15 +23,21 @@
 .main__content-item {
   text-align: center;
   box-shadow: 1px 1px 5px #979797;
+  transition: all 0.3s;
 }
+.main__content-item:hover {
+  transform: scale(1.1);
+}
+
 .item_img {
-  max-width: 370px;
+  max-width: 100%;
 }
 .wide_img {
-  max-width: 770px;
+  max-width: 100%;
 }
 .item_text {
   padding: 14px 0 15px;
+  background-color: #fff;
 }
 .item_text-type {
   font-family: "PT Sans";
@@ -84,6 +96,8 @@
 
 .aside {
   max-width: 270px;
+  z-index: 4;
+  margin-left: 20px;
 }
 
 .about_author {
@@ -102,6 +116,8 @@
 }
 .about_item {
   box-shadow: 1px 1px 5px #979797;
+  transition: all 0.3s;
+  background-color: #fff;
 }
 .about_item + .about_item {
   margin-top: 30px;
@@ -110,7 +126,14 @@
 .about_item_top {
   margin-bottom: 70px;
   box-shadow: 1px 1px 5px #979797;
+  transition: all 0.3s;
 }
+
+.about_item_top:hover,
+.about_item:hover {
+  transform: scale(1.1);
+}
+
 .aside_img {
   max-width: 270px;
 }
@@ -225,6 +248,7 @@
 }
 .social_item {
   width: 88px;
+  height: 88px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -232,7 +256,18 @@
   padding: 17px 0 13px;
   gap: 6px;
   align-items: center;
+  transition: all 0.3s;
 }
+.social_item:hover svg path {
+  fill: #c9a96e;
+}
+.social_item:hover {
+  background-color: #3f3f3f;
+}
+.social_item:hover p {
+  color: #fff;
+}
+
 .social_text {
   font-family: "PT Sans";
   font-style: normal;
@@ -258,6 +293,10 @@
   display: inline-block;
   padding: 6px 15px;
 }
+.tags_link:hover {
+  color: #fff;
+  background-color: #3f3f3f;
+}
 .cantact {
   padding: 0 20px;
 }
@@ -269,6 +308,19 @@
   text-align: center;
   color: #171717;
   margin-bottom: 40px;
+}
+
+.contact_title:hover a {
+  background: radial-gradient(
+    circle at 33% 100%,
+    #fed373 4%,
+    #f15245 30%,
+    #d92e7f 62%,
+    #9b36b7 85%,
+    #515ecf
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .contact_img + .contact_img {
