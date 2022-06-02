@@ -85,7 +85,7 @@
     justify-content: center;
   }
   .slick-arrow {
-    bottom: 125px;
+    bottom: 144px;
   }
   .slick-dots {
     bottom: 126px;
@@ -138,6 +138,11 @@
   }
   .prev {
     left: 5%;
+  }
+  .slick-dots {
+    width: 98%;
+    justify-content: center;
+    padding: 18px 0;
   }
 }
 
@@ -274,7 +279,7 @@
     margin-bottom: 100px;
   }
   .slick-dots {
-    bottom: 55px;
+    bottom: 35px;
     gap: 15px;
   }
   .slick-arrow {
