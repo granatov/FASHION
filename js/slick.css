@@ -103,14 +103,12 @@
 .slick-arrow {
   position: absolute;
   z-index: 1;
-  bottom: 80px;
+  bottom: 98px;
   cursor: pointer;
   border: none;
   background-color: transparent;
 }
-/* .slick-next {
-  right: 20%;
-} */
+
 .prev {
   left: 20%;
   transition: all 0.3s;
@@ -146,9 +144,6 @@
   top: 3px;
   right: -9px;
 }
-/* .slick-prev {
-  left: 20%;
-} */
 
 .slick-dots {
   list-style: none;
@@ -158,6 +153,8 @@
   left: 50%;
   gap: 41px;
   transform: translate(-50%);
+  border: 1px solid #e5e5e5;
+  padding: 18px 187px;
 }
 
 .slick-dots button {
