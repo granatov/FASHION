@@ -7,7 +7,7 @@
   justify-content: space-between;
 }
 .main_slider {
-  max-width: 770px;
+  max-width: 790px;
 }
 .main_content_link {
   display: block;
@@ -26,7 +26,10 @@
   transition: all 0.3s;
 }
 .main__content-item:hover {
-  transform: scale(1.1);
+  transform: scale(1.03);
+}
+.wide_block:hover {
+  transform: scale(1.01);
 }
 
 .item_img {
