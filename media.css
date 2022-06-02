@@ -132,12 +132,12 @@
   }
 }
 
-@media (max-width: 650px) {
-  .slick-next {
-    right: 7%;
+@media (max-width: 690px) {
+  .next {
+    right: 5%;
   }
-  .slick-prev {
-    left: 7%;
+  .prev {
+    left: 5%;
   }
 }
 
@@ -197,9 +197,6 @@
   }
   .slick-dots {
     gap: 30px;
-  }
-  .slick-arrow {
-    display: none;
   }
 
   .wide_block_content {
@@ -278,5 +275,9 @@
   }
   .slick-dots {
     bottom: 55px;
+    gap: 15px;
+  }
+  .slick-arrow {
+    bottom: 53px;
   }
 }
