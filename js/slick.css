@@ -17,10 +17,8 @@
 
 .slick-list {
   position: relative;
-
   display: block;
-  overflow: hidden;
-
+  overflow: visible;
   margin: 0;
   padding: 0;
 }
@@ -45,7 +43,8 @@
   position: relative;
   top: 0;
   left: 0;
-
+  /* max-width: 770px;
+  max-height: 1000px; */
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -97,4 +96,50 @@
 }
 .slick-arrow.slick-hidden {
   display: none;
+}
+
+.main_slider {
+  position: relative;
+}
+.slick-arrow {
+  position: absolute;
+  z-index: 1;
+  bottom: 80px;
+  cursor: pointer;
+}
+.slick-next {
+  right: 20%;
+}
+.slick-prev {
+  left: 20%;
+}
+
+.slick-dots {
+  list-style: none;
+  display: flex;
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  gap: 41px;
+  transform: translate(-50%);
+}
+
+.slick-dots button {
+  font-family: "HK Grotesk";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #171717;
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+.slick-active button {
+  color: #c9a96e;
+}
+
+.contact_slider .slick-list {
+  overflow: hidden;
 }
